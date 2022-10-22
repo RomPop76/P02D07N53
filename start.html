@@ -113,13 +113,59 @@
     left: 605px;
    }
 
+    40% {
+      top: calc(100% - 20px);
+      left: 345px;
+    }
+
+    60% {
+      top: 30%;
+      left: 75px;
+    }
+
+    80% {
+      top: 0;
+      left: 335px;
+    }
+
+    100% {
+      top: 20%;
+      left: 700px;
+    }
+
   }
 
-  @keyframes playerPaddle {}
+  @keyframes playerPaddle {
 
-  @keyframes aiPaddle {}
+    40% {
+      top: calc(100% - 80px);
+    }
 
-  @keyframes showResult {}
+    60% {
+      top: 20%;
+    }
+
+    100% {
+      top: 10%;
+    }
+  }
+
+  @keyframes aiPaddle {
+
+    30% {
+      top:calc(100% - 80px);
+    }
+
+    100% {
+      top:20%;
+    }
+  }
+
+  @keyframes showResult {
+    100% {
+      transform: scale(1);
+    }
+  }
  </style>
 </head>
 
